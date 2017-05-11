@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/shopping"
+            android:icon="@drawable/shopping_icon"
+            android:title="쇼핑하기" />
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/showAll"
+            android:icon="@drawable/all_icon"
+            android:title="전체보기" />
+        <item
+            android:id="@+id/showGroup"
+            android:icon="@drawable/group_icon_01"
+            android:title="그룹보기" />
+        <item
+            android:id="@+id/showMore"
+            android:icon="@drawable/plus_icon"
+            android:title="더보기" />
+
+    </group>
+
+
+</menu>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<menu xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/shopping"-->
+            <!--android:title="쇼핑하기" />-->
+    <!--</group>-->
+    <!--<group android:checkableBehavior="single">-->
+        <!--<item-->
+            <!--android:id="@+id/showAll"-->
+            <!--android:title="전체보기" />-->
+        <!--<item-->
+            <!--android:id="@+id/showGroup"-->
+            <!--android:title="그룹보기" />-->
+        <!--<item-->
+            <!--android:id="@+id/showMore"-->
+            <!--android:title="더보기" />-->
+
+    <!--</group>-->
+
+
+<!--</menu>-->

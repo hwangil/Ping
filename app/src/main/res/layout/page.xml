@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <WebView
+        android:id="@+id/cardWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </WebView>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cardWebView"
+        android:layout_alignRight="@id/cardWebView">
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/floating_menu"
+            fab:menu_animationDelayPerItem="55"
+            fab:menu_buttonSpacing="0dp"
+            fab:menu_colorNormal="#fe4e48"
+            fab:menu_colorPressed="#fe4e48"
+            fab:menu_colorRipple="#99d4d4d4"
+            fab:menu_fab_size="normal"
+            fab:menu_icon="@drawable/fab_add"
+            fab:menu_openDirection="up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:keepScreenOn="false">
+<!-- fab_Size  : normal - 56dp, mini - 40dp-->
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/load"
+                fab:fab_colorPressed="#FAF4C0"
+                fab:fab_size = "normal"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/loadbutton"/>
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/bookmark"
+                fab:fab_colorPressed="#FAF4C0"
+                fab:fab_size = "normal"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/bookmark"/>
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </FrameLayout>
+    <!--<Button-->
+    <!--android:id="@+id/load"-->
+    <!--android:background="@drawable/loadbutton"-->
+    <!--android:layout_alignBottom="@id/cardWebView"-->
+    <!--android:layout_width="72dp"-->
+    <!--android:layout_height="72dp" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/bookmark"-->
+    <!--android:background="@drawable/bookmark_icon"-->
+    <!--android:layout_alignBottom="@id/cardWebView"-->
+    <!--android:layout_alignRight="@id/cardWebView"-->
+    <!--android:layout_width="72dp"-->
+    <!--android:layout_height="72dp" />-->
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="297dp"
+    android:layout_height="163dp"
+    android:background="@drawable/groupname_popup"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"/>
+    <EditText
+        android:id="@+id/newGroupName"
+        android:maxLines="1"
+        android:hint="그룹명을 입력해주세요."
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_weight="4"
+
+        android:layout_height="0dp" />
+    <LinearLayout
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_width="300dp"
+        android:layout_weight="3"
+        android:layout_height="0dp">
+        <TextView
+            android:text="확인"
+            android:id="@+id/changeOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="5dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:text="취소"
+            android:id="@+id/changeCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

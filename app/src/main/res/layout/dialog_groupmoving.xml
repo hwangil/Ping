@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="297dp"
+    android:layout_height="200dp"
+    android:background="@drawable/e_dong"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
+        android:layout_marginLeft="@dimen/activity_vertical_margin"
+        android:text=""
+        android:layout_weight="1"/>
+
+    <ScrollView
+        android:fillViewport = "true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10">
+
+        <ListView
+            android:id="@+id/movingDialogList"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:choiceMode="singleChoice"
+            android:listSelector="#46d5d5d5">
+        </ListView>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:layout_weight="2">
+        <TextView
+            android:text="확인"
+            android:id="@+id/movingCardOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:text="취소"
+            android:id="@+id/movingCardCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+</LinearLayout>

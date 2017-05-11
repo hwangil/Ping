@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gilsoo.ping">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:versionCode="1"
+        android:versionName="1.0" />
+
+
+    <application
+        android:name=".Network.ApplicationController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".IntroActivities.InitActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Shopping.ShoppingActivity" android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".IntroActivities.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".IntroActivities.LoginActivity" />
+        <activity android:name=".IntroActivities.JoinActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Show_More.Guide"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".Show_More.ChangePasswordActivity"></activity>
+        <activity android:name=".Show_All.CardSearchingActivity" />
+        <activity android:name=".Shopping.ShowSponsorActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Show_All.CardpageActivity"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="fa1b92c839209572b590355e7af9f09d"
+            />
+
+    </application>
+
+
+</manifest>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    tools:context="com.example.hsubeen.appjam.MainActivity">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:layout_marginBottom="30dp"
+        android:layout_weight="4">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </android.support.v4.view.ViewPager>
+
+        <LinearLayout
+            android:id="@+id/pageMarker"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|bottom"
+            android:orientation="horizontal"
+            android:layout_marginBottom = "30dp"/>
+
+    </FrameLayout>
+
+    <com.kakao.usermgmt.LoginButton
+        android:id="@+id/com_kakao_login"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        />
+    <Button
+        android:id="@+id/btnGoLogin"
+        android:background="@drawable/button_login"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        />
+
+    <Button
+        android:id="@+id/btnGoJoin"
+        android:background="@drawable/button_sign"
+        android:layout_marginLeft="@dimen/button_basic_margin"
+        android:layout_marginRight="@dimen/button_basic_margin"
+        android:layout_marginBottom="48dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height" />
+</LinearLayout>
